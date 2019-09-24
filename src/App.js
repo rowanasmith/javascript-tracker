@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Table from './Table';
+
 
 function App() {
   return (
@@ -8,16 +9,11 @@ function App() {
       <header className="App-header">
         <h1>Tracking Javascript 30 Day Challenge</h1>
       </header>
-      <table>
-        <tr>
-          <th>Day</th>
-          <th>Project Name</th>
-          <th>Description</th>
-          <th>Github Repo</th>
-        </tr>
-      </table>
+      <Table></Table>
+      
     </div>
   );
 }
 
 export default App;
+
