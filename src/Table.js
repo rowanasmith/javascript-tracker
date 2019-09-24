@@ -18,7 +18,7 @@ class Table extends Component {
           <th>Github Repo</th>
         </tr>
         <tbody>
-          {this.props.reduxState.listContentReducer.map(item => 
+          {this.props.reduxState.projectsList.map(item => 
               (<ListContents item={item} key={item.id}/>)
             )}
           </tbody>
