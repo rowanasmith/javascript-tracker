@@ -5,6 +5,16 @@ import ListContents from './ListContents';
 
 class Table extends Component {
 
+    getList = () => {
+        this.props.dispatch({
+            type: 'GET_PROJECTS'
+        })
+    }
+
+
+    componentDidMount(){
+        this.getList();
+    }
 
   render() {
       return(

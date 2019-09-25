@@ -3,14 +3,14 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 // Route includes
-const characterRouter = require('./routes/character.router');
+const projectRouter = require('./routes/project.router');
 
 // Body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /* Routes */
-app.use('/character', characterRouter);
+app.use('/projects', projectRouter);
 
 // Serve static files
 app.use(express.static('build'));
